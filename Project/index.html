@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div id="intro">
+        <h1>Philadelphia's Building Demolition</h1>
+        <p class="main">The city of Philadelphia collects garbage from
+        Monday—Friday. The city is divided into 67 regions, each of which is
+        assigned to one of the five days of the week.</p>
+        <p>This application shows each region color coded based on day of
+        week of garbage collection. To get more information about garbage
+        collection for one of the regions, click on that region on the map.</p>
+      </div>
+      <div id="results" style="display: none;">
+        <h1 class="day-of-week">Day of Week</h1>
+        <p class="main">Your garbage collection day is <span class="day-of-week">
+        Day of Week</span>.</p>
+        <p>Please be sure to leave your garbage outside on <span class="day-of-week">
+        Day of Week</span>. If this week is a federal holiday, leave your
+        garbage outside on the following day.</p>
+      </div>
+    </div>
+    <!-- Map -->
+    <div id="map" class="map">
+      <div class="button">
+        <button style="font-size:16px" onclick="closeResults();"> CLOSE <i class="fa fa-undo"></i></button>
+      </div>
+<!-- Required Goal 5-->
+<!---
+      <div class="legend" style="padding: 10px;">
+        <h2> Collection Day </h2> <hr>
+        <p class="MON" style="text-align: center;">Monday   </p>
+        <p class="TUE" style="text-align: center;">Tuesday  </p>
+        <p class="WED" style="text-align: center;">Wednesday</p>
+        <p class="THU" style="text-align: center;">Thursday </p>
+        <p class="FRI" style="text-align: center;">Friday   </p>
+      </div>
+--->
+    </div>
+    <!-- Legend -->
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
